@@ -1,0 +1,552 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #040404;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container__header {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    padding-top: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: var(--gradient-light, linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0.00) 100%));
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    gap: 0 40px;
+    padding-top: 25px;
+}
+
+.menu-left {
+    padding-left: 25px;
+}
+
+.menu-right {
+    padding-right: 25px;
+}
+
+.menu__link {
+    color: #363636;
+    font-size: 16px;
+
+}
+
+
+
+.promo {
+    background-image: url(../imgs/Rectangle\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.promo__inner {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.title {
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+    font-size: 76px;
+    font-weight: 400;
+
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+}
+
+.subbtitle {
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    border-bottom: 1px solid #040404;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.subbtitle span {
+    color: #9F6B08;
+    font-size: 34px;
+    display: block;
+    padding: 10px 0;
+}
+
+.promo__text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #363636;
+    margin-bottom: 10px;
+}
+
+.promo__arrow {
+    margin-top: auto;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+.info {
+    margin-top: 100px;
+}
+
+.info__part {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__part--first {
+    display: block;
+}
+
+.info__part--third {
+    padding-top: 66px;
+
+}
+
+.info__part-second .text_car {
+    max-width: 352px;
+}
+
+.info__part--third .text_car {
+    max-width: 377px;
+}
+
+.title__car {
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.info__part-textbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+}
+
+.text_car {
+    flex-basis: 440px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.text_car b {
+    font-weight: 700;
+}
+
+.info__part-img {
+    object-fit: cover;
+
+}
+
+.info__content {
+    flex-basis: 415px;
+}
+
+.info__table {
+    flex-basis: 450px;
+    border-bottom: 1px solid #040404;
+    position: relative;
+    top: 20px;
+}
+
+.info__table::before {
+    content: " ";
+    border-top: 1px solid #040404;
+    position: absolute;
+    width: 100%;
+    top: -20px;
+}
+
+.info__table td {
+    padding-bottom: 20px;
+}
+
+.info__track {
+    background: url(../imgs/gran_final_01\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.track__title {
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-top: 47px;
+    padding-bottom: 30px;
+    font-weight: 300;
+}
+
+.track__text {
+    max-width: 434px;
+}
+
+.track-img {
+    margin: auto auto 90px auto;
+}
+
+.track__inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 90px;
+
+}
+
+.super-car__info {
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+
+.super-car__black {
+    background-color: #363636;
+    padding: 100px 0 50px;
+
+}
+
+.super-car__black-info {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.super-car__inner {
+    position: relative;
+}
+
+.super-car__inner::before {
+    content: '';
+    background-image: url(/imgs/Polygon\ 4.svg);
+    width: 185px;
+    height: 213px;
+    position: absolute;
+    top: 210px;
+    left: -130px;
+}
+
+.super-car__inner::after {
+    content: '';
+    background-image: url(/imgs/Polygon\ 2.svg);
+    width: 498px;
+    height: 572px;
+    position: absolute;
+    top: 290px;
+    left: -40px;
+}
+
+
+.super-car__title {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-right: 50px;
+}
+
+.super-car__black-info-box {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.super-car__text {
+    margin-bottom: 20px;
+}
+
+.super-car__img {
+    margin: 170px auto 60px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+
+.super-car__black-info-box {
+    flex-basis: 437px;
+}
+
+.super-car-desr-lst {
+    display: inline-flex;
+    justify-content: center;
+    gap: 0 65px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.super-car-desr-lst dd {
+    text-transform: uppercase;
+}
+
+.super-car__whire-inner {
+    padding-top: 125px;
+    position: relative;
+}
+
+.super-car__whire-inner::before {
+    content: '';
+    background-image: url(/imgs/Group\ 9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 280px;
+    height: 255px;
+    position: absolute;
+    top: -40px;
+    left: 360px;
+
+}
+
+.super-car__whire-inner::after {
+    content: '';
+    background-image: url(/imgs/Group\ 10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 280px;
+    height: 260px;
+    position: absolute;
+    top: 115px;
+    left: 600px;
+}
+
+.super-car__text-white {
+    margin-bottom: 30px;
+}
+
+.super-car__text-white-one {
+    max-width: 285px;
+}
+
+.super-car__text-white-two {
+    width: 437px;
+}
+
+.super-car__text-white-thri {
+    width: 590px;
+}
+
+.super-car__text-white {
+    margin-bottom: 30px;
+}
+
+.super-car_video {
+    margin-top: 100px;
+    background-image: url(../imgs/Polygon\ 6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.super-car__video-link span {
+    display: block;
+    color: #fff;
+
+}
+
+
+.blog {
+    margin-bottom: 100px;
+}
+
+.blog__title-main {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 30px;
+    min-height: 46px;
+}
+
+.blog__img {
+    margin-bottom: 20px;
+}
+
+.blog-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+    min-height: 46px;
+}
+
+.blog-text {
+    margin-bottom: 10px;
+}
+
+.blog-title {}
+
+.blog__slide {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.blog-btn {
+    color: #363636;
+    font-size: 12px;
+}
+
+.blog__button {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.swiper-button-left {
+    left: 415px;
+}
+
+.swiper-button-right {
+    left: 460px;
+}
+
+.blog__quote {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+}
+
+.blockquote {
+    margin-bottom: 30px;
+}
+
+.blog__quote-box {
+    flex-basis: 434px;
+}
+
+.blockquote__name {
+
+    font-weight: 700;
+    font-size: 14px;
+
+
+}
+
+.blockquote__name span {
+    color: #9F6B08;
+    font-weight: 400;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.blockquote-text {
+    font-style: italic;
+}
+
+.footer {
+    padding: 100px 0 80px;
+    background-color: #363636;
+    color: #fff;
+}
+
+.contacts {
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+}
+
+.contacts__info dt {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contacts__info {}
+
+.contacts__info dd {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer__info-item {
+    margin-bottom: 40px;
+    ;
+}
+
+.social__list {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts__address {
+    flex-basis: 462px;
+}
+
+.address__title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer__buttom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address__text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
